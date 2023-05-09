@@ -5,8 +5,11 @@ project(Examples
     DESCRIPTION "Examples of the angle utilities"
     LANGUAGES CXX)
 
-set(CMAKE_CXX_FLAGS_RELEASE "/MT")
-set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
+if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
+    set(CMAKE_CXX_FLAGS_RELEASE "/MT")
+    set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
+else()
+endif()
 
 add_executable(Examples
     source/main.cpp)

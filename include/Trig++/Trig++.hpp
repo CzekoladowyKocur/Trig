@@ -21,6 +21,8 @@ namespace angles {
 	
 /* For std::is_floating_point_v */
 #include <type_traits>
+/* For sin, cos, etc. */
+#include <math.h>
 /* Explicit order */
 #include "Trig++/Radians.hpp"
 #include "Trig++/Degrees.hpp"

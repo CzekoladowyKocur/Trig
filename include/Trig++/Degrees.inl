@@ -136,7 +136,7 @@ inline namespace angle_literals
 		return TDegrees<float>{ static_cast<float>(degrees) };
 	}
 
-	[[nodiscard]] consteval TDegrees<float> operator ""_deg(const size_t degrees) noexcept(true)
+	[[nodiscard]] consteval TDegrees<float> operator ""_deg(const unsigned long long int degrees) noexcept(true)
 	{
 		return TDegrees<float>{ static_cast<float>(degrees) };
 	}
@@ -146,7 +146,7 @@ inline namespace angle_literals
 		return TDegrees<double>{ static_cast<double>(degrees) };
 	}
 
-	[[nodiscard]] consteval TDegrees<double> operator ""d_deg(const size_t degrees) noexcept(true)
+	[[nodiscard]] consteval TDegrees<double> operator ""d_deg(const unsigned long long int degrees) noexcept(true)
 	{
 		return TDegrees<double>{ static_cast<double>(degrees) };
 	}

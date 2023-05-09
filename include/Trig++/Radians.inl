@@ -136,7 +136,7 @@ inline namespace angle_literals
 		return TRadians<float>{ static_cast<float>(radians) };
 	}
 
-	[[nodiscard]] consteval TRadians<float> operator ""_rad(const size_t radians) noexcept(true)
+	[[nodiscard]] consteval TRadians<float> operator ""_rad(const unsigned long long int radians) noexcept(true)
 	{
 		return TRadians<float>{ static_cast<float>(radians) };
 	}
@@ -146,7 +146,7 @@ inline namespace angle_literals
 		return TRadians<float>{ static_cast<float>(radians) * angles::constant::pi<float> };
 	}
 
-	[[nodiscard]] consteval TRadians<float> operator ""_rad_pi(const size_t radians) noexcept(true)
+	[[nodiscard]] consteval TRadians<float> operator ""_rad_pi(const unsigned long long int radians) noexcept(true)
 	{
 		return TRadians<float>{ static_cast<float>(radians) * angles::constant::pi<float> };
 	}
@@ -156,7 +156,7 @@ inline namespace angle_literals
 		return TRadians<double>{ static_cast<double>(radians) };
 	}
 
-	[[nodiscard]] consteval TRadians<double> operator ""d_rad(const size_t radians) noexcept(true)
+	[[nodiscard]] consteval TRadians<double> operator ""d_rad(const unsigned long long int radians) noexcept(true)
 	{
 		return TRadians<double>{ static_cast<double>(radians) };
 	}
@@ -166,7 +166,7 @@ inline namespace angle_literals
 		return TRadians<double>{ static_cast<double>(radians) * angles::constant::pi<double> };
 	}
 
-	[[nodiscard]] consteval TRadians<double> operator ""d_rad_pi(const size_t radians) noexcept(true)
+	[[nodiscard]] consteval TRadians<double> operator ""d_rad_pi(const unsigned long long int radians) noexcept(true)
 	{
 		return TRadians<double>{ static_cast<double>(radians) * angles::constant::pi<double> };
 	}
