@@ -58,7 +58,7 @@ int main()
 }
 ```
 ## Testing
-Some of the code (not all) been tested using Google Test.
+Some of the code (not all) was tested using Google Test.
 ## Usage 
 To use the library, simply add the include folder to the include paths of your project.
 # Building
