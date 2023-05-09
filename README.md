@@ -59,5 +59,7 @@ int main()
 ```
 ## Testing
 Some of the code (not all) been tested using Google Test.
-## Usage
-
+## Usage 
+To use the library, simply add the include folder to the include paths of your project.
+# Building
+Library can be built with scripts in the root directory on both windows and linux. msc and gcc tested.
