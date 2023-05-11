@@ -32,8 +32,8 @@ set_target_properties(gtest gtest_main benchmark PROPERTIES FOLDER "Google Tests
 set_target_properties(benchmark_main gmock gmock_main PROPERTIES FOLDER "Google Tests")
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
-    add_compile_options(/W4 /WX)
-else()
+    add_compile_options(/W4 /WX /EHsc)
+elseif(CMAKE_C_COMPILER_ID STREQUAL "GNU")
     add_definitions(-w)
     add_compile_options(-mavx)
 endif()
